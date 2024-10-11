@@ -10,13 +10,16 @@
   --cl-primary-m: #bbf7d0;
   --cl-primary-d: #15803d;
 
-  --cl-secondary-l: #E8E9FC;
+  --cl-secondary-l: #e8e9fc;
   --cl-secondary-m: #4338ca;
   --cl-secondary-d: #3730a3;
 
   --fsize-s: clamp(0.875rem, 1.125vw, 1rem);
   --fsize-m: clamp(1rem, 1.25vw, 1.2rem);
   --fsize-l: clamp(1.125rem, 1.5vw, 1.5rem);
+
+  --width: clamp(340px, 40vw, 800px);
+  --height: clamp(288px, 30vh, 400px);
 }
 
 * {

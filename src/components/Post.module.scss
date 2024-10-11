@@ -1,5 +1,5 @@
 .post {
-  width: 340px;
+  width: var(--width);
   display: flex;
   flex-direction: column;
   background: var(--cl-light);
@@ -10,7 +10,7 @@
 
 .post-cover {
   align-self: stretch;
-  height: 288px;
+  height: var(--height);
   object-fit: cover;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .truncate {
-  width: calc(340px - 2rem);
+  width: calc(var(--width) - 2rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
