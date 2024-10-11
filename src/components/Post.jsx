@@ -1,24 +1,25 @@
 import cover from "../assets/spacejoy-YqFz7UMm8qE-unsplash.jpg";
+import styles from "./Post.module.scss";
 
 export default function Post() {
 
   return (
-    <article className="post">
+    <article className={styles.post}>
 
-      <img className="post-cover" src={cover} alt="A nice image representing the article" />
+      <img className={styles["post-cover"]} src={cover} alt="A nice image representing the article" />
 
-      <section className="post-content">
-        <header className="post-header">
-          <div className="post-chip">
+      <section className={styles["post-content"]}>
+        <header className={styles["post-header"]}>
+          <div className={styles["post-chip"]}>
             <span>Interior</span>
           </div>
 
-          <h2 className="post-title truncate">Top 5 Living Room Inspirations</h2>
+          <h2 className={`${styles["post-title"]} ${styles.truncate}`}>Top 5 Living Room Inspirations</h2>
         </header>
 
-        <aside className="post-summary">
-          <p className="post-description">Curated vibrant colors for your living, make it pop & calm in the same time. </p>
-          <span className="post-btn">
+        <aside className={styles["post-summary"]}>
+          <p className={styles["post-description"]}>Curated vibrant colors for your living, make it pop & calm in the same time. </p>
+          <button className={styles["post-btn"]}>
             <a href="#">Read more</a>
             <span>
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +28,7 @@ export default function Post() {
                    />
               </svg>
             </span>
-          </span>
+          </button>
         </aside>
 
       </section>
